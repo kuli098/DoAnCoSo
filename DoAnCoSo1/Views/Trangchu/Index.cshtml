@@ -4,5 +4,9 @@
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
 }
 
-<h2></h2>
+<h2>TIN TUC</h2>
+@foreach (var news in Model) {
+    <h2>@news.Tieude</h2>
+    @news.Noidung
+}
 
