@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "GameTheoTheloai";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+@foreach (var tintuc in Model) {
+    <h2>@tintuc.Tieude</h2>
+    @tintuc.Noidung
+}

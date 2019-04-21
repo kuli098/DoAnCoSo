@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using DoAnCoSo1.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DoAnCoSo1
 {
@@ -33,6 +35,9 @@ namespace DoAnCoSo1
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            var connection = @"Data Source=DESKTOP-3URSRU2\SQLEXPRESS;Initial Catalog=DACSDB;Integrated Security=True";
+            services.AddDbContext<DACSDBContext>(options => options.UseSqlServer(connection));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
