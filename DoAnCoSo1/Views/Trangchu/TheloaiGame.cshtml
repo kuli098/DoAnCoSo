@@ -1,0 +1,9 @@
+﻿@model IEnumerable<DoAnCoSo1.Models.Theloai>
+
+@{
+    ViewData["Title"] = "TheloaiGame";
+}
+
+@foreach (var item in Model) {
+    <li><a href="#">@item.TenTheloai</a></li>        
+}

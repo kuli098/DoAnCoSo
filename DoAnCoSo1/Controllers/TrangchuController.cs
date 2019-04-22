@@ -10,17 +10,18 @@ namespace DoAnCoSo1.Controllers
 {
     public class TrangchuController : Controller
     {
+        //Tạo đối tượng context
         DACSDBContext data = new DACSDBContext();
 
-        public IActionResult Index()
+        //Lấy tất cả tin tức trong database đưa ra trang chủ
+        public async Task<IActionResult> Index()
         {
-            var news = from n in data.Tintuc select n;
-            return View(news);
+            return View(await data.Tintuc.ToListAsync());
         }
 
-        public IActionResult GameTheoTheloai(string maTL) {
-            var news = from n in data.Tintuc where n.MaTheloai == maTL select n;
-            return View(news);
+        //Lấy tất cả các thể loại game đưa vào Partial View để làm thanh menu
+        public async Task<IActionResult> TheloaiGame() {
+            return PartialView(await data.Theloai.ToListAsync());
         }
     }
 }
