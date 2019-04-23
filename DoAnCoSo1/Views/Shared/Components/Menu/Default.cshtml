@@ -1,0 +1,5 @@
+﻿@model IEnumerable<DoAnCoSo1.Models.Theloai>
+
+@foreach (var tl in Model) {
+    <li><a href="@Url.Action("GameTheoTheloai", "Trangchu", new { maTL = tl.MaTheloai})">@tl.TenTheloai</a></li>
+}

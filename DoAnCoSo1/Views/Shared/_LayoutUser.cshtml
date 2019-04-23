@@ -72,7 +72,7 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav main_nav">
-                        <partial name="TheloaiGame"/>
+                        @await Component.InvokeAsync("Menu")
                         @*<li><a href="#">ESPORTS</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">VIDEOS</a>

@@ -14,14 +14,15 @@ namespace DoAnCoSo1.Controllers
         DACSDBContext data = new DACSDBContext();
 
         //Lấy tất cả tin tức trong database đưa ra trang chủ
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(await data.Tintuc.ToListAsync());
+            var news = from tt in data.Tintuc select tt;
+            return View(news);
         }
 
-        //Lấy tất cả các thể loại game đưa vào Partial View để làm thanh menu
-        public async Task<IActionResult> TheloaiGame() {
-            return PartialView(await data.Theloai.ToListAsync());
+        public IActionResult GameTheoTheloai(string maTL) {
+            var newsTL = from tt in data.Tintuc where tt.MaTheloai == maTL select tt;
+            return View(newsTL);
         }
     }
 }
