@@ -24,5 +24,10 @@ namespace DoAnCoSo1.Controllers
             var newsTL = from tt in data.Tintuc where tt.MaTheloai == maTL select tt;
             return View(newsTL);
         }
+
+        public IActionResult ChitietTintuc(int maTT) {
+            var newsDetail = data.Tintuc.SingleOrDefault(cttt => cttt.MaTintuc == maTT);
+            return View(newsDetail);
+        }
     }
 }
