@@ -1,9 +1,0 @@
-﻿@{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_LayoutUser.cshtml";
-}
-@foreach (var news in Model) {
-    <a href="@Url.Action("ChitietTintuc", "Trangchu", new { maTT = news.MaTintuc})"><h2>@news.Tieude</h2></a>
-    @Html.Raw(System.Web.HttpUtility.HtmlDecode(news.Noidung))
-}
-
