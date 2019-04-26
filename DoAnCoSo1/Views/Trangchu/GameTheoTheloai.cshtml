@@ -4,7 +4,7 @@
 }
 
 @foreach (var tt in Model) {
-    <a href="@Url.Action("ChitietTintuc", "Trangchu", new { maTT = tt.MaTintuc})"><p>@tt.Tieude</p></a>
+    <a href="@Url.Action("ChitietTintuc", "Trangchu", new { maTT = tt.MaTintuc})"><h2>@tt.Tieude</h2></a>
     @Html.Raw(System.Web.HttpUtility.HtmlDecode(tt.Noidung))
 }
 
