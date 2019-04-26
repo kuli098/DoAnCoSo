@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "GameTheoTheloai";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+@foreach (var tt in Model) {
+    <a href="@Url.Action("ChitietTintuc", "Trangchu", new { maTT = tt.MaTintuc})"><h2>@tt.Tieude</h2></a>
+    @Html.Raw(System.Web.HttpUtility.HtmlDecode(tt.Noidung))
+}
+

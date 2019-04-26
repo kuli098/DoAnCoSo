@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.banner-menu {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background: red;
+    height: 200px;
+}
+
+.banner {
+    height: 144px;
+}
+
+.content {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.footer {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background: black;
+    height: 100px;
+    color: white;
+}
+
+.ads-left {
+    background: green;
+    height: 500px;
+}
+
+.redered-body {
+    height: auto
+}
+
+.ads-right {
+    background: green;
+    height: 500px;
+}
+
+.menu .navbar-light .navbar-nav .nav-link {
+    color: black;
+    text-transform: uppercase;
+}
+
+.menu .navbar-light .navbar-nav .nav-link {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: larger;
+    padding: 0 25px;
+}
+
+.rendered-body h2 {
+    font-weight: bold;
+    color: black;
+}
+
+.rendered-body a:hover {
+    text-decoration: none;
+}
