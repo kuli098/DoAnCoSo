@@ -36,7 +36,7 @@ namespace DoAnCoSo1
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            var connection = @"Server=DESKTOP-3URSRU2\SQLEXPRESS;Database=DACSDB;Trusted_Connection=True;ConnectRetryCount=0";
+            var connection = @"Server=DESKTOP-1L3RQ80;Database=DACSDB;Trusted_Connection=True;ConnectRetryCount=0";
             services.AddDbContext<DACSDBContext>(options => options.UseSqlServer(connection));
         }
 
