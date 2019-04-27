@@ -8,7 +8,11 @@ namespace DoAnCoSo1.Controllers
 {
     public class AdminController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Home()
+        {
+            return View();
+        }
+        public IActionResult Login()
         {
             return View();
         }
