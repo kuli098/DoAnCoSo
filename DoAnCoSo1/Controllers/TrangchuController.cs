@@ -29,5 +29,10 @@ namespace DoAnCoSo1.Controllers
             var newsDetail = data.Tintuc.SingleOrDefault(cttt => cttt.MaTintuc == maTT);
             return View(newsDetail);
         }
+
+        [HttpGet]
+        public IActionResult ThemTintuc() {
+            return View();
+        }
     }
 }
