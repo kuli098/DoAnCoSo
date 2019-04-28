@@ -35,3 +35,6 @@ C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.dll
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.pdb
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.csproj.CopyComplete
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Trangchu\ThemTintuc.g.cshtml.cs
+C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Home.g.cshtml.cs
+C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Login.g.cshtml.cs
+C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutAdmin.g.cshtml.cs
