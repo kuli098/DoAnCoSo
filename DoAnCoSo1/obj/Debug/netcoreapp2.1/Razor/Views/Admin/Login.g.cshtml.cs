@@ -69,7 +69,7 @@ using DoAnCoSo1.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html lang=\"en\">\r\n");
             EndContext();
             BeginContext(68, 456, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "64172fe434674934940fc265f813df43", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ad68d90a95c48adb743842e1515ecf3", async() => {
                 BeginContext(74, 388, true);
                 WriteLiteral(@"
     <meta name=""viewport"" content=""width=device-width"" />
@@ -80,7 +80,7 @@ using DoAnCoSo1.Models;
     ");
                 EndContext();
                 BeginContext(462, 53, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "41f26676146349febae32487a378b8ee", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "13fc6699fdeb4c588d9414a54ec4ce96", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -114,7 +114,7 @@ using DoAnCoSo1.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(526, 1920, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cda8e649e4ee45d4bc0fdabaf2938ece", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ca27e4ff7d045e496b5fe1900354a9f", async() => {
                 BeginContext(532, 155, true);
                 WriteLiteral("\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <h3>Hãy đăng nhập bằng tài khoản Admin của bạn</h3>\r\n            <div class=\"main\">\r\n");
                 EndContext();
@@ -125,7 +125,7 @@ using DoAnCoSo1.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1406, 983, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "972e0f3cd6044ab99925ec8c8c249138", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2edb27c7b89341319837af4a1270e23e", async() => {
                     BeginContext(1424, 958, true);
                     WriteLiteral(@"
                     <div class=""form-group"">

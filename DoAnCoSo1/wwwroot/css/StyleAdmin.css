@@ -1,4 +1,18 @@
-﻿h1.page-header {
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    width: 1000px;
+}
+
+
+table.table {
+    width: 1000px;
+}
+
+h1.page-header {
     margin-top: -5px;
 }
 

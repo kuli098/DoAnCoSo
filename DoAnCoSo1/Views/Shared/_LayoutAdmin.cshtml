@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link href="~/css/StyleAdmin.css" rel="stylesheet" />
@@ -23,7 +25,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="@Url.Action("Home", "Admin")">
                     Administrator
                 </a>
             </div>
@@ -56,41 +58,22 @@
                         <!-- Main Menu -->
                         <div class="side-menu-container">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#"><span class="glyphicon glyphicon-dashboard"></span>Thêm Tin Tức</a></li>
-                                <li><a href="#"><span class="glyphicon glyphicon-plane"></span> #1 </a></li>
-                                <li><a href="#"><span class="glyphicon glyphicon-cloud"></span> #2 </a></li>
+                                <li><a href="@Url.Action("ThemTintuc", "Admin")"><span class="fa fa-plus"></span>  Thêm Tin Tức</a></li>
                                 <!-- Dropdown-->
                                 <li class="panel panel-default" id="dropdown">
                                     <a data-toggle="collapse" href="#dropdown-lvl1">
-                                        <span class="glyphicon glyphicon-user"></span> #3 <span class="caret"></span>
+                                        <span class="fa fa-palette"></span>  Giao diện <span class="caret"></span>
                                     </a>
                                     <!-- Dropdown level 1 -->
                                     <div id="dropdown-lvl1" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <ul class="nav navbar-nav">
-                                                <li><a href="#">#1</a></li>
-                                                <li><a href="#">#2</a></li>
-                                                <li><a href="#">#3</a></li>
-                                                <!-- Dropdown level 2 -->
-                                                @*<li class="panel panel-default" id="dropdown">
-                                                    <a data-toggle="collapse" href="#dropdown-lvl2">
-                                                        <span class="glyphicon glyphicon-off"></span> Sub Level <span class="caret"></span>
-                                                    </a>
-                                                    <div id="dropdown-lvl2" class="panel-collapse collapse">
-                                                        <div class="panel-body">
-                                                            <ul class="nav navbar-nav">
-                                                                <li><a href="#">Link</a></li>
-                                                                <li><a href="#">Link</a></li>
-                                                                <li><a href="#">Link</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>*@
+                                                <li><a href="#">Banner</a></li>
+                                                <li><a href="#">Quảng cáo</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </nav>
@@ -99,7 +82,9 @@
         </div>
         <div class="col-md-10 content">
             <div class="panel panel-default">
-                @RenderBody()
+                <div class="container">
+                    @RenderBody()
+                </div>
             </div>
         </div>
         <footer class="pull-left footer">

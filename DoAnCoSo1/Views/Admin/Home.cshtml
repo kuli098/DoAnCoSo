@@ -1,18 +1,39 @@
-﻿
+﻿@model IEnumerable<DoAnCoSo1.Models.Tintuc>
+
 @{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Admin Dashboard";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
-
-<div class="panel-heading">
-    Dashboard
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayName("Tiêu đề")
+                </th>
+                <th>
+                    @Html.DisplayName("Ngày đăng")
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tieude)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Ngaydang)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.MaTintuc"><i class="fa fa-edit"></i></a> |
+                        <a asp-controller="Admin" asp-action="AdminChitietTintuc" asp-route-maTT="@item.MaTintuc"><i class="fa fa-eye"></i></a> |
+                        <a asp-action="Delete" asp-route-id="@item.MaTintuc"><i class="fa fa-trash-alt"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
-<div class="panel-body">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</div>
-
