@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DoAnCoSo1.Models;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 
 namespace DoAnCoSo1.Controllers
 {
@@ -16,7 +15,7 @@ namespace DoAnCoSo1.Controllers
         //Lấy tất cả tin tức trong database đưa ra trang chủ
         public IActionResult Index()
         {
-            var news = from tt in data.Tintuc select tt;
+            var news = (from tt in data.Tintuc select tt).OrderByDescending(tt => tt.Ngaydang);
             return View(news);
         }
 
@@ -32,7 +31,22 @@ namespace DoAnCoSo1.Controllers
 
         [HttpGet]
         public IActionResult ThemTintuc() {
+            ViewBag.MaTheloai = new SelectList(data.Theloai, "MaTheloai", "TenTheloai");
             return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ThemTintuc(Tintuc tt) {
+            tt.Ngaydang = DateTime.Parse(DateTime.Now.ToString());
+            if (ModelState.IsValid)
+            {
+                data.Tintuc.Add(tt);
+                data.SaveChanges();
+            }
+            else
+                return RedirectToAction("Home", "Admin");
+            return RedirectToAction("Index");
         }
     }
 }
