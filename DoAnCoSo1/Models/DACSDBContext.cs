@@ -23,7 +23,7 @@ namespace DoAnCoSo1.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=DESKTOP-1L3RQ80;Database=DACSDB;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-3URSRU2\\SQLEXPRESS;Database=DACSDB;Trusted_Connection=True;");
             }
         }
 
