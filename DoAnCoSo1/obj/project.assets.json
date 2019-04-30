@@ -12534,23 +12534,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hutvo\\.nuget\\packages\\": {},
+    "C:\\Users\\NTS Romanoff\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hutvo\\Desktop\\DoAnCoSo\\DoAnCoSo1\\DoAnCoSo1.csproj",
+      "projectUniqueName": "C:\\Users\\NTS Romanoff\\Documents\\GitHub\\DoAnCoSo\\DoAnCoSo1\\DoAnCoSo1.csproj",
       "projectName": "DoAnCoSo1",
-      "projectPath": "C:\\Users\\hutvo\\Desktop\\DoAnCoSo\\DoAnCoSo1\\DoAnCoSo1.csproj",
-      "packagesPath": "C:\\Users\\hutvo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hutvo\\Desktop\\DoAnCoSo\\DoAnCoSo1\\obj\\",
+      "projectPath": "C:\\Users\\NTS Romanoff\\Documents\\GitHub\\DoAnCoSo\\DoAnCoSo1\\DoAnCoSo1.csproj",
+      "packagesPath": "C:\\Users\\NTS Romanoff\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\NTS Romanoff\\Documents\\GitHub\\DoAnCoSo\\DoAnCoSo1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\hutvo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\NTS Romanoff\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

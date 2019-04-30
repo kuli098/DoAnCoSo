@@ -35,3 +35,43 @@ C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.dll
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.pdb
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.csproj.CopyComplete
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Trangchu\ThemTintuc.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\bin\Debug\netcoreapp2.1\DoAnCoSo1.deps.json
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\bin\Debug\netcoreapp2.1\DoAnCoSo1.runtimeconfig.json
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\bin\Debug\netcoreapp2.1\DoAnCoSo1.runtimeconfig.dev.json
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\bin\Debug\netcoreapp2.1\DoAnCoSo1.dll
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\bin\Debug\netcoreapp2.1\DoAnCoSo1.pdb
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\bin\Debug\netcoreapp2.1\DoAnCoSo1.Views.dll
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\bin\Debug\netcoreapp2.1\DoAnCoSo1.Views.pdb
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.csprojAssemblyReference.cache
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.csproj.CoreCompileInputs.cache
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.RazorAssemblyInfo.cache
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.RazorAssemblyInfo.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.AssemblyInfoInputs.cache
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.AssemblyInfo.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.TagHelpers.input.cache
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.TagHelpers.output.cache
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.RazorCoreGenerate.cache
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Home.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Login.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Menu\Default.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutAdmin.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutUser.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Trangchu\ChitietTintuc.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Trangchu\GameTheoTheloai.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Trangchu\Index.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Trangchu\ThemTintuc.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.RazorTargetAssemblyInfo.cache
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.RazorTargetAssemblyInfo.cs
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.Views.pdb
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.dll
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.pdb
+C:\Users\NTS Romanoff\Documents\GitHub\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.csproj.CopyComplete
