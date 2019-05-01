@@ -1,9 +1,9 @@
-﻿@{
+﻿@model DoAnCoSo1.Models.Admin
+
+@{
     Layout = null;
 }
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -34,16 +34,17 @@
                     <span class="span-or">or</span>
                 </div>*@
 
-                <form role="form">
+                <form asp-action="Login" role="form">
                     <div class="form-group">
-                        <label for="inputUsernameEmail">Tên tài khoản hoặc email</label>
-                        <input type="text" class="form-control" id="inputUsernameEmail">
+                        <label asp-for="AdminTaikhoan">Tên tài khoản hoặc email</label>
+                        <input asp-for="AdminTaikhoan"type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <a class="pull-right" href="#">Đổi mật khẩu?</a>
-                        <label for="inputPassword">Mật khẩu</label>
-                        <input type="password" class="form-control" id="inputPassword">
+                        <label asp-for="AdminPassword">Mật khẩu</label>
+                        <input asp-for="AdminPassword" type="password" class="form-control" required>
                     </div>
+                    <p style="color: red;">@ViewBag.LoiDangnhap</p>
                     <div class="checkbox pull-right">
                         <label>
                             <input type="checkbox">

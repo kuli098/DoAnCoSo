@@ -13,25 +13,25 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Tieude" class="control-label">Tiêu đề</label>
-                <input asp-for="Tieude" class="form-control" />
+                <input asp-for="Tieude" class="form-control" required/>
                 <span asp-validation-for="Tieude" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="MaTheloai" class="control-label">Thể loại</label>
+                <select asp-for="MaTheloai" class="form-control" asp-items="ViewBag.MaTheloai"></select>
+            </div>
+            <div class="form-group">
                 <label asp-for="Noidung" class="control-label">Nội dung</label>
-                <input asp-for="Noidung" class="form-control" />
+                <textarea asp-for="Noidung" required></textarea>
                 <span asp-validation-for="Noidung" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MaTheloai" class="control-label">Thể loại</label>
-                <select asp-for="MaTheloai" class ="form-control" asp-items="ViewBag.MaTheloai"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <button type="submit" class="btn btn-default"><i class="fa fa-plus"></i> Thêm</button>
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Home" asp-controller="Admin">Quay lại Dashboard</a>
 </div>

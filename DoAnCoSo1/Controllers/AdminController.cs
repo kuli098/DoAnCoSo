@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using DoAnCoSo1.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace DoAnCoSo1.Controllers
 {
@@ -18,8 +17,23 @@ namespace DoAnCoSo1.Controllers
             return View(tinTuc);
         }
 
+        [HttpGet]
         public IActionResult Login()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(Admin ad) {
+            var admin = data.Admin.SingleOrDefault(adm => adm.AdminTaikhoan == ad.AdminTaikhoan && adm.AdminPassword == ad.AdminPassword);
+            if (admin == null)
+            {
+                ViewBag.LoiDangnhap = "Sai tên tài khoản hoặc mật khẩu!";
+            }
+            else {
+                HttpContext.Session.SetString("Admin", admin.AdminTaikhoan);
+                return RedirectToAction("Home");
+            }   
             return View();
         }
 
@@ -49,6 +63,13 @@ namespace DoAnCoSo1.Controllers
         {
             var newsDetail = data.Tintuc.SingleOrDefault(cttt => cttt.MaTintuc == maTT);
             return View(newsDetail);
+        }
+
+        public IActionResult AdminXoaTintuc(int maTT) {
+            var tinTuc = data.Tintuc.SingleOrDefault(tt => tt.MaTintuc == maTT);
+            data.Tintuc.Remove(tinTuc);
+            data.SaveChanges();
+            return RedirectToAction("Home");
         }
     }
 }

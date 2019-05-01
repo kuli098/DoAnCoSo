@@ -15,6 +15,7 @@ namespace DoAnCoSo1.Models
         {
         }
 
+        public virtual DbSet<Admin> Admin { get; set; }
         public virtual DbSet<Theloai> Theloai { get; set; }
         public virtual DbSet<Tintuc> Tintuc { get; set; }
 
@@ -29,6 +30,19 @@ namespace DoAnCoSo1.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Admin>(entity =>
+            {
+                entity.HasKey(e => e.AdminTaikhoan);
+
+                entity.ToTable("ADMIN");
+
+                entity.Property(e => e.AdminTaikhoan)
+                    .HasMaxLength(20)
+                    .ValueGeneratedNever();
+
+                entity.Property(e => e.AdminPassword).HasMaxLength(18);
+            });
+
             modelBuilder.Entity<Theloai>(entity =>
             {
                 entity.HasKey(e => e.MaTheloai);

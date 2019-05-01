@@ -5,7 +5,6 @@ C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\bin\Debug\netcoreapp2.1\DoAnCoSo1.dll
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\bin\Debug\netcoreapp2.1\DoAnCoSo1.pdb
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\bin\Debug\netcoreapp2.1\DoAnCoSo1.Views.dll
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\bin\Debug\netcoreapp2.1\DoAnCoSo1.Views.pdb
-C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.csprojAssemblyReference.cache
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.csproj.CoreCompileInputs.cache
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.RazorAssemblyInfo.cache
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.RazorAssemblyInfo.cs
@@ -39,3 +38,4 @@ C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Sh
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\ThemTintuc.g.cshtml.cs
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Home.g.cshtml.cs
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\AdminChitietTintuc.g.cshtml.cs
+C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.csprojAssemblyReference.cache
