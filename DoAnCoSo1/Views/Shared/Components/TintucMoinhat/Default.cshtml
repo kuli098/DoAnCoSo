@@ -1,0 +1,9 @@
+﻿@model DoAnCoSo1.Models.Tintuc
+
+<a href="@Url.Action("ChitietTintuc", "Trangchu", new { maTT = Model.MaTintuc})">
+    <img src="@Model.Anhbia" />
+    <h2>@Model.Tieude</h2>
+</a>
+<p>Ngày đăng: @Model.Ngaydang</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+@*@Html.Raw(System.Web.HttpUtility.HtmlDecode(news.Noidung))*@

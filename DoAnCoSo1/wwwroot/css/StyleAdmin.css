@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+.card {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+img.card-img-top {
+    height: 200px;
+}
+
 form {
     width: 1030px;
 }

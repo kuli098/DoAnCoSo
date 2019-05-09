@@ -4,36 +4,22 @@
     ViewData["Title"] = "Admin Dashboard";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
-<div class="container">
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    @Html.DisplayName("Tiêu đề")
-                </th>
-                <th>
-                    @Html.DisplayName("Ngày đăng")
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Tieude)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Ngaydang)
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.MaTintuc"><i class="fa fa-edit"></i></a> |
-                        <a asp-controller="Admin" asp-action="AdminChitietTintuc" asp-route-maTT="@item.MaTintuc"><i class="fa fa-eye"></i></a> |
-                        <a asp-controller="Admin" asp-action="AdminXoaTintuc" asp-route-maTT="@item.MaTintuc"><i class="fa fa-trash-alt"></i></a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+<div class="row">
+    @foreach (var tintuc in Model) {
+    <div class="col-sm-12 col-md-4">
+        <div class="container">
+            <div class="card">
+                <img class="card-img-top" src="@tintuc.Anhbia" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">@tintuc.Tieude</h4>
+                    <p>@tintuc.Ngaydang</p>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary"><i class="fa fa-edit"></i></a>
+                    <a asp-controller="Admin" asp-action="AdminChitietTintuc" asp-route-maTT="@tintuc.MaTintuc" class="btn btn-primary"><i class="fa fa-eye"></i></a>
+                    <a asp-controller="Admin" asp-action="AdminXoaTintuc" asp-route-maTT="@tintuc.MaTintuc" class="btn btn-primary" style="background: red"><i class="fa fa-trash-alt"></i></a>
+                </div>
+            </div>
+        </div>  
+    </div>
+    }  
 </div>

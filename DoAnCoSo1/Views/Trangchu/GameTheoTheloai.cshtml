@@ -3,8 +3,16 @@
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
 }
 
-@foreach (var tt in Model) {
-    <a href="@Url.Action("ChitietTintuc", "Trangchu", new { maTT = tt.MaTintuc})"><h2>@tt.Tieude</h2></a>
-    @Html.Raw(System.Web.HttpUtility.HtmlDecode(tt.Noidung))
+@foreach (var news in Model)
+{
+<div class="top-1-news">
+    <a href="@Url.Action("ChitietTintuc", "Trangchu", new { maTT = news.MaTintuc})">
+        <img src="@news.Anhbia" />
+        <h2>@news.Tieude</h2>
+    </a>
+    <p>Ngày đăng: @news.Ngaydang</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+</div>
+@*@Html.Raw(System.Web.HttpUtility.HtmlDecode(news.Noidung))*@
 }
 

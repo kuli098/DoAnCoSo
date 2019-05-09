@@ -45,22 +45,25 @@
                 </div> <!-- Hết row menu -->
             </div> <!-- Hết row tổng -->
         </div> <!-- Hết banner - menu -->
-    </div>
+    </div> <!-- Hết container -->
+    <!-- Quảng cáo -->
+    <div class="container">
+        <div class="ads">
+            Quảng cáo
+        </div>
+    </div> <!-- Hết container -->
     <!-- Body trang web -->
     <div class="container">
         <div class="content">
             <div class="row">
-                <!-- Thanh quảng cáo bên trái -->
-                <div class="ads-left col-sm-12 col-md-2 col-lg-2">
-                    <p>Quảng cáo bên trái</p>
-                </div>
                 <!-- Render Body -->
-                <div class="rendered-body col-sm-12 col-lg-8 col-md-8">
-                    @RenderBody()
+                <div class="col-sm-12 col-lg-8 col-md-8">
+                    <div class="rendered-body">
+                        @RenderBody()
+                    </div>
                 </div>
-                <!-- Thanh quảng cáo bên phải -->
-                <div class="ads-right col-sm-12 col-md-2 col-lg-2">
-                    <p>Quảng cáo bên phải</p>
+                <div class="ads-body col-sm-12 col-lg-4 col-md-4">
+                    Quảng cáo
                 </div>
             </div>
         </div>

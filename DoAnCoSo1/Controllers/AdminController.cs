@@ -10,10 +10,12 @@ namespace DoAnCoSo1.Controllers
     public class AdminController : Controller
     {
         DACSDBContext data = new DACSDBContext();
+        //Update Database
+        //Scaffold-DbContext "Server=DESKTOP-3URSRU2\SQLEXPRESS;Database=DACSDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -f
 
         public IActionResult Home()
         {
-            var tinTuc = from tt in data.Tintuc select tt;
+            var tinTuc = (from tt in data.Tintuc select tt).OrderByDescending(tt => tt.Ngaydang);
             return View(tinTuc);
         }
 
@@ -48,6 +50,7 @@ namespace DoAnCoSo1.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult ThemTintuc(Tintuc tt)
         {
+            ViewBag.MaTheloai = new SelectList(data.Theloai, "MaTheloai", "TenTheloai");
             tt.Ngaydang = DateTime.Parse(DateTime.Now.ToString());
             if (ModelState.IsValid)
             {

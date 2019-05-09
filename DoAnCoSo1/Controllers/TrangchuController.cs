@@ -20,7 +20,7 @@ namespace DoAnCoSo1.Controllers
         }
 
         public IActionResult GameTheoTheloai(string maTL) {
-            var newsTL = from tt in data.Tintuc where tt.MaTheloai == maTL select tt;
+            var newsTL = (from tt in data.Tintuc where tt.MaTheloai == maTL select tt).OrderByDescending(tt => tt.Ngaydang);
             return View(newsTL);
         }
 
