@@ -3,13 +3,22 @@
     padding: 0;
 }
 
+.break-line p {
+    margin-left: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
 .news {
     display: inline-flex;
+    height: 147px;
+    margin-bottom: 15px;
 }
 
 .news img {
-    width: 220px;
+    height: 147px;
     margin-bottom: 25px;
+    width: 100%;
 }
 
 .break-line {
@@ -48,7 +57,8 @@
 }
 
 .banner {
-    height: 144px;
+    width: 1110px;
+    height: 145px;
 }
 
 .content {
