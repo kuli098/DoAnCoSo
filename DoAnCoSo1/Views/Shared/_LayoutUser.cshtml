@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="~/css/Style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=vietnamese" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700&amp;subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,500,700&display=swap&subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -25,7 +24,7 @@
             <div class="row">
                 <!-- Banner -->
                 <div class="banner col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <p>BANNNER</p>
+                    @await Component.InvokeAsync("Banner")
                 </div> <!-- Hết row banner -->
                 <!-- Menu -->
                 <div class="menu col-xs-12 col-sm-12 col-md-12 col-lg-12">

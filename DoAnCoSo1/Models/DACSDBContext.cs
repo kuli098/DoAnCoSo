@@ -16,6 +16,7 @@ namespace DoAnCoSo1.Models
         }
 
         public virtual DbSet<Admin> Admin { get; set; }
+        public virtual DbSet<Banner> Banner { get; set; }
         public virtual DbSet<Theloai> Theloai { get; set; }
         public virtual DbSet<Tintuc> Tintuc { get; set; }
 
@@ -41,6 +42,13 @@ namespace DoAnCoSo1.Models
                     .ValueGeneratedNever();
 
                 entity.Property(e => e.AdminPassword).HasMaxLength(18);
+            });
+
+            modelBuilder.Entity<Banner>(entity =>
+            {
+                entity.HasKey(e => e.MaBanner);
+
+                entity.ToTable("BANNER");
             });
 
             modelBuilder.Entity<Theloai>(entity =>

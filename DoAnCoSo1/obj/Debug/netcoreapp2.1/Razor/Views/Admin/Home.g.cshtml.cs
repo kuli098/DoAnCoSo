@@ -106,7 +106,7 @@ WriteAttributeValue("", 357, tintuc.Anhbia, 357, 14, false);
             WriteLiteral("</p>\r\n                    <p class=\"card-text\">Some example text some example text. John Doe is an architect and engineer</p>\r\n                    <a href=\"#\" class=\"btn btn-primary\"><i class=\"fa fa-edit\"></i></a>\r\n                    ");
             EndContext();
             BeginContext(771, 145, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4eaff5a8c3ed48bdad151469888b77d3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ced789f2d3b548fc91c529ab82d20779", async() => {
                 BeginContext(887, 25, true);
                 WriteLiteral("<i class=\"fa fa-eye\"></i>");
                 EndContext();
@@ -144,7 +144,7 @@ WriteAttributeValue("", 357, tintuc.Anhbia, 357, 14, false);
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(938, 171, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "789f0c438da9432b9b6c80ea30d6c29c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "14a5968c75344b06890c66a01d49db8f", async() => {
                 BeginContext(1074, 31, true);
                 WriteLiteral("<i class=\"fa fa-trash-alt\"></i>");
                 EndContext();

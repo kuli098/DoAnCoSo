@@ -20,6 +20,29 @@ namespace DoAnCoSo1.Controllers
         }
 
         [HttpGet]
+        public IActionResult Banner()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Banner(Banner bnr) {
+            var banner = data.Banner.FirstOrDefault(b => b.MaBanner == "banner");
+            if (banner == null)
+            {
+                ViewBag.LoiLink = "Link không hợp lệ!";
+            }
+            else
+            {
+                banner.LinkBanner = bnr.LinkBanner;
+                data.Banner.Update(banner);
+                data.SaveChanges();
+                return RedirectToAction("Home");
+            }
+            return View();
+        }
+
+        [HttpGet]
         public IActionResult Login()
         {
             return View();

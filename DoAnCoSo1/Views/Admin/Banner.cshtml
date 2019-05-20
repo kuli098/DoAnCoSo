@@ -1,0 +1,18 @@
+﻿@model DoAnCoSo1.Models.Banner
+
+@{
+    ViewData["Title"] = "Banner";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<h2>ĐỔI BANNER</h2>
+<hr />
+<form asp-action="Banner">
+    <div class="form-group">
+        <p>Link ảnh banner:</p>
+        <input asp-for="LinkBanner" type="text" class="form-control">
+    </div>
+    <p>@ViewBag.LoiLink</p>
+    <div class="form-group">
+        <button type="submit" class="btn btn-default">ĐỔI</button>
+    </div>
+</form>
