@@ -41,3 +41,4 @@ C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Ad
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\TintucMoinhat\Default.g.cshtml.cs
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Banner.g.cshtml.cs
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Banner\Default.g.cshtml.cs
+C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.csprojAssemblyReference.cache

@@ -27,4 +27,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Test-Image\ads 1110 x 100.png" />
+    <None Include="wwwroot\Test-Image\ads 350 x 350.png" />
+  </ItemGroup>
+
 </Project>

@@ -68,12 +68,12 @@ using DoAnCoSo1.Models;
             WriteLiteral("\r\n<h2>ĐỔI BANNER</h2>\r\n<hr />\r\n");
             EndContext();
             BeginContext(159, 300, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "759bc4b6436e4f1ba1dd4be8226996e2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d21b30d5cf0f4c599f9cbea3cf05b137", async() => {
                 BeginContext(185, 73, true);
                 WriteLiteral("\r\n    <div class=\"form-group\">\r\n        <p>Link ảnh banner:</p>\r\n        ");
                 EndContext();
                 BeginContext(258, 70, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "edc937a662cb4ec2b37ff9e3914c3c94", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ed7c7cc184064f3fa3d39b2b0b759486", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
