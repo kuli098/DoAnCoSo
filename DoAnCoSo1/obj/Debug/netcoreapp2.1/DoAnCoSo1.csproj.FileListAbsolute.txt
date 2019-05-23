@@ -38,7 +38,6 @@ C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Sh
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\ThemTintuc.g.cshtml.cs
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Home.g.cshtml.cs
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\AdminChitietTintuc.g.cshtml.cs
-C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\DoAnCoSo1.csprojAssemblyReference.cache
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\TintucMoinhat\Default.g.cshtml.cs
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Banner.g.cshtml.cs
 C:\Users\hutvo\Desktop\DoAnCoSo\DoAnCoSo1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Banner\Default.g.cshtml.cs
