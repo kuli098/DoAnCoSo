@@ -36,6 +36,8 @@ namespace DoAnCoSo1
 
             var connection = @"Server=DESKTOP-1L3RQ80;Database=DACSDB;Trusted_Connection=True;ConnectRetryCount=0";
             services.AddDbContext<DACSDBContext>(options => options.UseSqlServer(connection));
+
+            //services.AddDefaultIdentity<Admin>().AddEntityFrameworkStores<DACSDBContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,6 +57,7 @@ namespace DoAnCoSo1
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseSession();
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {

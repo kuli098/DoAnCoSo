@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using DoAnCoSo1.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DoAnCoSo1.Controllers
 {
+    //[Authorize]
     public class AdminController : Controller
     {
         DACSDBContext data = new DACSDBContext();
