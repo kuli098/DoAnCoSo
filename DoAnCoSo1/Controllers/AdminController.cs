@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace DoAnCoSo1.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class AdminController : Controller
     {
         DACSDBContext data = new DACSDBContext();
@@ -37,9 +37,14 @@ namespace DoAnCoSo1.Controllers
         }
 
         [HttpGet]
-        public IActionResult Login()
+        [AllowAnonymous]
+        public IActionResult Login(/*string returnUrl = null*/)
         {
             return View();
+            //if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
+            //    return Redirect(returnUrl);
+            //else
+            //    return RedirectToAction("Home", "Admin");
         }
 
         [HttpPost]

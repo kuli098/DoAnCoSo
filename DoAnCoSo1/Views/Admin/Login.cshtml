@@ -2,6 +2,7 @@
 
 @{
     Layout = null;
+    var returnUrl = @Context.Request.Query["returnurl"];
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +35,7 @@
                     <span class="span-or">or</span>
                 </div>*@
 
-                <form asp-action="Login" role="form">
+                <form asp-action="Login" asp-route-returnurl="@returnUrl" role="form">
                     <div class="form-group">
                         <label asp-for="AdminTaikhoan">Tên tài khoản hoặc email</label>
                         <input asp-for="AdminTaikhoan"type="text" class="form-control" required>

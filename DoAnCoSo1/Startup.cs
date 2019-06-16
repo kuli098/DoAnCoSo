@@ -7,6 +7,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using DoAnCoSo1.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using System;
 
 namespace DoAnCoSo1
 {
@@ -28,16 +33,22 @@ namespace DoAnCoSo1
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
-
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddDistributedMemoryCache();
             services.AddSession();
 
-            var connection = @"Server=DESKTOP-1L3RQ80;Database=DACSDB;Trusted_Connection=True;ConnectRetryCount=0";
+            var connection = @"Server=DESKTOP-3URSRU2\SQLEXPRESS;Database=DACSDB;Trusted_Connection=True;ConnectRetryCount=0";
             services.AddDbContext<DACSDBContext>(options => options.UseSqlServer(connection));
 
-            //services.AddDefaultIdentity<Admin>().AddEntityFrameworkStores<DACSDBContext>();
+            services.AddIdentity<IdentityUser, IdentityRole>(options => { })
+           .AddEntityFrameworkStores<DACSDBContext>();
+
+            services.ConfigureApplicationCookie(options => {
+                options.LoginPath = new PathString("/Admin/Login");
+                options.ReturnUrlParameter = CookieAuthenticationDefaults.ReturnUrlParameter;
+                options.SlidingExpiration = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

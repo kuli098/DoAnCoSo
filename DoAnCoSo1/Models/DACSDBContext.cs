@@ -1,11 +1,12 @@
 ﻿using System;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace DoAnCoSo1.Models
 {
-    public partial class DACSDBContext : DbContext
+    public partial class DACSDBContext : IdentityDbContext<IdentityUser>
     {
         public DACSDBContext()
         {
@@ -32,6 +33,8 @@ namespace DoAnCoSo1.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Admin>(entity =>
             {
                 entity.HasKey(e => e.AdminTaikhoan);
