@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace DoAnCoSo1.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class AdminController : Controller
     {
         DACSDBContext data = new DACSDBContext();
