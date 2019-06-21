@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -13,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="~/css/site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="~/js/site.js"></script>
 </head>
 <body>
@@ -29,8 +29,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Admin" asp-action="">Tin chưa duyệt</a></li>
-                    <li><a asp-area="" asp-controller="Admin" asp-action="">Tin đã duyệt</a></li>
+                    <li><a asp-area="" asp-controller="Admin" asp-action="TintucChuaduyet">Tin chưa duyệt</a></li>
+                    <li><a asp-area="" asp-controller="Admin" asp-action="TintucDaduyet">Tin đã duyệt</a></li>
                     <li><a asp-area="" asp-controller="Admin" asp-action="Members">Thành viên</a></li>
                 </ul>
             </div>

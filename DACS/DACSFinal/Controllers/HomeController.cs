@@ -12,7 +12,7 @@ namespace DACSFinal.Controllers
 
         public IActionResult Index()
         {
-            var tinTuc = from tt in data.DboTinTuc select tt;
+            var tinTuc = from tt in data.DboTinTuc where tt.Duyet == true select tt;
             return View(tinTuc);
         }
 

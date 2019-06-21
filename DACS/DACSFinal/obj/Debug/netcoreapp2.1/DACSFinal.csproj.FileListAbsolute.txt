@@ -74,3 +74,6 @@ C:\Users\hutvo\Desktop\DACS\DACSFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared
 C:\Users\hutvo\Desktop\DACS\DACSFinal\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\hutvo\Desktop\DACS\DACSFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutAdmin.g.cshtml.cs
 C:\Users\hutvo\Desktop\DACS\DACSFinal\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Members.g.cshtml.cs
+C:\Users\hutvo\Desktop\DACS\DACSFinal\obj\Debug\netcoreapp2.1\Razor\Views\Admin\TintucChuaduyet.g.cshtml.cs
+C:\Users\hutvo\Desktop\DACS\DACSFinal\obj\Debug\netcoreapp2.1\Razor\Views\Admin\TintucDaduyet.g.cshtml.cs
+C:\Users\hutvo\Desktop\DACS\DACSFinal\obj\Debug\netcoreapp2.1\Razor\Views\Admin\AdminNewsDetail.g.cshtml.cs

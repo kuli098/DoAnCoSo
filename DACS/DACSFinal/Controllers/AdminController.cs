@@ -19,5 +19,37 @@ namespace DACSFinal.Controllers
             var members = from m in data.AspNetUsers select m;
             return View(members);
         }
+
+        public IActionResult TintucChuaduyet() {
+            var tinTuc = from tt in data.DboTinTuc where tt.Duyet == false select tt;
+            return View(tinTuc);
+        }
+
+        public IActionResult TintucDaduyet()
+        {
+            var tinTuc = from tt in data.DboTinTuc where tt.Duyet == true select tt;
+            return View(tinTuc);
+        }
+
+        public IActionResult DuyetTintuc(int maTT) {
+            var tinTuc = data.DboTinTuc.SingleOrDefault(tt => tt.MaTintuc == maTT);
+            tinTuc.Duyet = true;
+            data.DboTinTuc.Update(tinTuc);
+            data.SaveChanges();
+            return RedirectToAction("TintucChuaduyet");
+        }
+
+        public IActionResult XoaTintuc(int maTT) {
+            var tinTuc = data.DboTinTuc.SingleOrDefault(tt => tt.MaTintuc == maTT);
+            tinTuc.Duyet = true;
+            data.DboTinTuc.Remove(tinTuc);
+            data.SaveChanges();
+            return RedirectToAction("TintucChuaduyet");
+        }
+
+        public IActionResult AdminNewsDetail(int maTT) {
+            var tinTuc = data.DboTinTuc.SingleOrDefault(tt => tt.MaTintuc == maTT);
+            return View(tinTuc);
+        }
     }
 }
