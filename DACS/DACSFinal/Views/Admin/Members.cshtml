@@ -1,0 +1,13 @@
+﻿    @{
+    ViewData["Title"] = "Members";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>THÀNH VIÊN</h2>
+<hr />
+@foreach (var mem in Model)
+{
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-success">User Email: @mem.UserName</li>
+    </ul>
+}

@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "NewsDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>@Model.TieuDe</h3>
+<p>Ngày đăng: @Model.NgayDang</p>
+<hr />
+<b>@Model.LoiMoDau</b>
+@Html.Raw(System.Web.HttpUtility.HtmlDecode(Model.NoiDung))

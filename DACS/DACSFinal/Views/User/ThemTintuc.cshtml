@@ -1,0 +1,53 @@
+﻿@model DACSFinal.Models.DboTinTuc
+
+@{
+    ViewData["Title"] = "ThemTintuc";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>THÊM TIN TỨC</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ThemTintuc" class="them-tin-tuc">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TieuDe" class="control-label">Tiêu đề</label>
+                <input asp-for="TieuDe" class="form-control" required/>
+                <span asp-validation-for="TieuDe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnhBia" class="control-label">Ảnh bìa</label>
+                <input asp-for="AnhBia" class="form-control" required/>
+                <span asp-validation-for="AnhBia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoiDung" class="control-label">Nội dung</label>
+                <textarea asp-for="NoiDung" required></textarea>
+                <span asp-validation-for="NoiDung" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LoiMoDau" class="control-label">Lời mở đầu</label>
+                <input asp-for="LoiMoDau" class="form-control" required/>
+                <span asp-validation-for="LoiMoDau" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaTheloai" class="control-label">Thể loại</label>
+                <select asp-for="MaTheloai" class="form-control" asp-items="ViewBag.MaTheloai"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label">Tác giả</label>
+                @*<input asp-for="UserId" class="form-control" disabled />*@
+                <p>@ViewBag.userID</p>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Quay lại</a>
+</div>
+

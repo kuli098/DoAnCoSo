@@ -1,0 +1,7 @@
+﻿@model IEnumerable<DACSFinal.Models.DboTheLoai>
+
+@foreach (var tl in Model)
+{
+    @*<li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>*@
+    <li><a asp-area="" asp-controller="Home" asp-action="GameCategory" asp-route-maTL="@tl.MaTheloai">@tl.TenTheloai</a></li>
+}
