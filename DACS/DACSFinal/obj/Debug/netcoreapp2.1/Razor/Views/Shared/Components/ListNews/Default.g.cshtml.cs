@@ -62,7 +62,7 @@ using DACSFinal.Models;
             WriteLiteral("    ");
             EndContext();
             BeginContext(39, 1421, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74ffad23a9774f87abd8812d456ffa9c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4876cf9920b9471c9a3bc91c7c54382c", async() => {
                 BeginContext(134, 184, true);
                 WriteLiteral("\r\n        <div class=\"news\">\r\n            <div class=\"container\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-2 col-sm-12\">\r\n                        <img");
                 EndContext();

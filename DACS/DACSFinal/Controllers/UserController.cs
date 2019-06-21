@@ -35,6 +35,7 @@ namespace DACSFinal.Controllers
 
             tt.NgayDang = DateTime.Parse(DateTime.Now.ToString());
             tt.UserId = userManager.GetUserId(HttpContext.User);
+            tt.Duyet = false;
 
             if (ModelState.IsValid)
             {

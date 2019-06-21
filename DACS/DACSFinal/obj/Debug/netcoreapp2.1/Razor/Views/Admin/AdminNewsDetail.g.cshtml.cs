@@ -107,7 +107,7 @@ Write(Html.Raw(System.Web.HttpUtility.HtmlDecode(Model.NoiDung)));
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(259, 157, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "db446ecff1c047e8ad94927d088c27f1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1bfc3843298d4f85afd6b29d3fd448ea", async() => {
                 BeginContext(379, 33, true);
                 WriteLiteral("<i class=\"fa fa-check\"> Duyệt</i>");
                 EndContext();

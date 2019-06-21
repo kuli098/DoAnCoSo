@@ -66,7 +66,7 @@ using DACSFinal.Models;
             WriteLiteral("    <li>");
             EndContext();
             BeginContext(173, 112, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "830ee06a10ac459bb7db36cc9f33254c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65ba6e437be3452ab20d7bb3290d6690", async() => {
                 BeginContext(268, 13, false);
 #line 6 "C:\Users\hutvo\Desktop\DACS\DACSFinal\Views\Shared\Components\Menu\Default.cshtml"
                                                                                                  Write(tl.TenTheloai);
