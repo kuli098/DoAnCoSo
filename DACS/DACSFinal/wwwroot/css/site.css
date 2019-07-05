@@ -3,6 +3,14 @@
     margin: 0;
 }
 
+.news b {
+    color: black;
+}
+
+.news p {
+    color: black;
+}
+
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
 body {
@@ -49,6 +57,10 @@ form.them-tin-tuc {
 @media screen and (max-width: 767px) {
     /* Hide captions */
     .carousel-caption {
+        display: none;
+    }
+
+    .side-img {
         display: none;
     }
 }

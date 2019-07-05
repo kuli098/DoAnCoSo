@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace DACSFinal.Models
 {
-    public partial class AspNetUsers : IdentityUser
+    public partial class AspNetUsers
     {
         public AspNetUsers()
         {

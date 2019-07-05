@@ -12,7 +12,7 @@ namespace DACSFinal.Controllers.View_Component
     [Authorize]
     public class ListNewsViewComponent : ViewComponent
     {
-        aspnetDACSFinalBF08D98794964522B60AD5E13E1C2AA7Context data = new aspnetDACSFinalBF08D98794964522B60AD5E13E1C2AA7Context();
+        DACSDBContext data = new DACSDBContext();
 
         private readonly UserManager<IdentityUser> userManager;
         public ListNewsViewComponent(UserManager<IdentityUser> _userManager)
@@ -20,6 +20,7 @@ namespace DACSFinal.Controllers.View_Component
             userManager = _userManager;
         }
 
+        // Lấy các tin tức đã được user đang đăng nhập thêm và tình trạng duyệt của tin tức đó
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var tinTuc = from tt in data.DboTinTuc where tt.UserId == userManager.GetUserId(HttpContext.User) select tt;

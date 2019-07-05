@@ -7,8 +7,9 @@ namespace DACSFinal.Controllers.View_Component
 {
     public class MenuViewComponent : ViewComponent
     {
-        aspnetDACSFinalBF08D98794964522B60AD5E13E1C2AA7Context data = new aspnetDACSFinalBF08D98794964522B60AD5E13E1C2AA7Context();
+        DACSDBContext data = new DACSDBContext();
 
+        // Lấy danh sách các thể loại để làm thanh menu
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var theLoai = from tl in data.DboTheLoai select tl;

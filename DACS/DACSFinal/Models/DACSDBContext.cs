@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace DACSFinal.Models
 {
-    public partial class aspnetDACSFinalBF08D98794964522B60AD5E13E1C2AA7Context : DbContext
+    public partial class DACSDBContext : DbContext
     {
-        public aspnetDACSFinalBF08D98794964522B60AD5E13E1C2AA7Context()
+        public DACSDBContext()
         {
         }
 
-        public aspnetDACSFinalBF08D98794964522B60AD5E13E1C2AA7Context(DbContextOptions<aspnetDACSFinalBF08D98794964522B60AD5E13E1C2AA7Context> options)
+        public DACSDBContext(DbContextOptions<DACSDBContext> options)
             : base(options)
         {
         }
@@ -30,7 +30,7 @@ namespace DACSFinal.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=aspnet-DACSFinal-BF08D987-9496-4522-B60A-D5E13E1C2AA7;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-3URSRU2\\SQLEXPRESS;Database=DACSDB;Trusted_Connection=True;");
             }
         }
 
@@ -38,9 +38,9 @@ namespace DACSFinal.Models
         {
             modelBuilder.Entity<AspNetRoleClaims>(entity =>
             {
-                entity.HasIndex(e => e.RoleId);
-
-                entity.Property(e => e.RoleId).IsRequired();
+                entity.Property(e => e.RoleId)
+                    .IsRequired()
+                    .HasMaxLength(450);
 
                 entity.HasOne(d => d.Role)
                     .WithMany(p => p.AspNetRoleClaims)
@@ -49,11 +49,6 @@ namespace DACSFinal.Models
 
             modelBuilder.Entity<AspNetRoles>(entity =>
             {
-                entity.HasIndex(e => e.NormalizedName)
-                    .HasName("RoleNameIndex")
-                    .IsUnique()
-                    .HasFilter("([NormalizedName] IS NOT NULL)");
-
                 entity.Property(e => e.Id).ValueGeneratedNever();
 
                 entity.Property(e => e.Name).HasMaxLength(256);
@@ -63,9 +58,9 @@ namespace DACSFinal.Models
 
             modelBuilder.Entity<AspNetUserClaims>(entity =>
             {
-                entity.HasIndex(e => e.UserId);
-
-                entity.Property(e => e.UserId).IsRequired();
+                entity.Property(e => e.UserId)
+                    .IsRequired()
+                    .HasMaxLength(450);
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.AspNetUserClaims)
@@ -76,9 +71,9 @@ namespace DACSFinal.Models
             {
                 entity.HasKey(e => new { e.LoginProvider, e.ProviderKey });
 
-                entity.HasIndex(e => e.UserId);
-
-                entity.Property(e => e.UserId).IsRequired();
+                entity.Property(e => e.UserId)
+                    .IsRequired()
+                    .HasMaxLength(450);
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.AspNetUserLogins)
@@ -88,8 +83,6 @@ namespace DACSFinal.Models
             modelBuilder.Entity<AspNetUserRoles>(entity =>
             {
                 entity.HasKey(e => new { e.UserId, e.RoleId });
-
-                entity.HasIndex(e => e.RoleId);
 
                 entity.HasOne(d => d.Role)
                     .WithMany(p => p.AspNetUserRoles)
@@ -102,14 +95,6 @@ namespace DACSFinal.Models
 
             modelBuilder.Entity<AspNetUsers>(entity =>
             {
-                entity.HasIndex(e => e.NormalizedEmail)
-                    .HasName("EmailIndex");
-
-                entity.HasIndex(e => e.NormalizedUserName)
-                    .HasName("UserNameIndex")
-                    .IsUnique()
-                    .HasFilter("([NormalizedUserName] IS NOT NULL)");
-
                 entity.Property(e => e.Id).ValueGeneratedNever();
 
                 entity.Property(e => e.Email).HasMaxLength(256);
@@ -149,6 +134,8 @@ namespace DACSFinal.Models
                 entity.HasKey(e => e.MaTintuc);
 
                 entity.ToTable("dbo.TinTuc");
+
+                entity.Property(e => e.Duyet).HasDefaultValueSql("((0))");
 
                 entity.Property(e => e.MaTheloai)
                     .HasMaxLength(10)

@@ -1,8 +1,0 @@
-﻿@model IEnumerable<DoAnCoSo1.Models.Theloai>
-
-@foreach (var tl in Model)
-{
-    <li class="nav-item">
-        <a class="nav-link" href="@Url.Action("GameTheoTheloai", "Trangchu", new { maTL = tl.MaTheloai})">@tl.TenTheloai</a>
-    </li>
-}

@@ -79,7 +79,7 @@ using DACSFinal.Models;
             WriteLiteral("    ");
             EndContext();
             BeginContext(184, 1730, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a27fa55e56b6472287385c53bee3a78a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f59e2ad2784d434b8aaef5d4ca3f1b78", async() => {
                 BeginContext(269, 184, true);
                 WriteLiteral("\r\n        <div class=\"news\">\r\n            <div class=\"container\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-2 col-sm-12\">\r\n                        <img");
                 EndContext();
@@ -124,7 +124,7 @@ WriteAttributeValue("", 459, tinTuc.AnhBia, 459, 14, false);
                 WriteLiteral("</p>\r\n                            </div>\r\n                            <div class=\"col-md-12\">\r\n                                ");
                 EndContext();
                 BeginContext(1137, 154, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "17ff616cc4554a669216685bf88f0c7f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6877da54ae304d409dec02330ccf51ac", async() => {
                     BeginContext(1262, 25, true);
                     WriteLiteral("<i class=\"fa fa-eye\"></i>");
                     EndContext();
@@ -164,7 +164,7 @@ WriteAttributeValue("", 459, tinTuc.AnhBia, 459, 14, false);
                 WriteLiteral("\r\n                                <a class=\"btn btn-info\"><i class=\"fa fa-edit\"></i></a>\r\n                                ");
                 EndContext();
                 BeginContext(1413, 149, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2e0317274cf444e69e0d83d5adac9a47", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b9cccb6ed959437f9054be2401f91a61", async() => {
                     BeginContext(1531, 27, true);
                     WriteLiteral("<i class=\"fa fa-times\"></i>");
                     EndContext();
@@ -204,7 +204,7 @@ WriteAttributeValue("", 459, tinTuc.AnhBia, 459, 14, false);
                 WriteLiteral("\r\n                                ");
                 EndContext();
                 BeginContext(1596, 152, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1570daac289d48e885d6a89e9788c116", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c59fe09d5b764dd5b022514161204ffd", async() => {
                     BeginContext(1717, 27, true);
                     WriteLiteral("<i class=\"fa fa-check\"></i>");
                     EndContext();
